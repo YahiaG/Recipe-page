@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+body {
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: var(--Eggshell);
+}
+ul,ol {
+    padding-left: 30px;
+    color: var(--Wenge-Brown);
+    font-weight: 600
+}
+li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.card {
+    background-color: var(--White);
+    max-width: 800px;
+}
+@media (min-width: 768px) {
+    .card {
+        padding: 30px;
+        border-radius: 20px;
+        margin: 100px auto;
+    }
+}
+section {
+    padding: 20px 0;
+}
+section:not(:last-child) {
+    border-bottom: 1px solid var(--Light-Grey);
+}
+@media (min-width: 768px) {
+    .card .image {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    
+}
+.card .image img {
+    max-width: 100%;
+}
+.card article {
+    padding: 30px;
+}
+.card article h1{
+    font-family: "Young Serif", serif;
+    font-size: 35px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    color: var(--Dark-Charcoal);
+    font-weight: 700;
+}
+.card article p{
+    color: var(--Nutmeg);
+    font-weight: 500;
+
+}
+.card .prepare {
+    margin-top: 30px;
+    background-color: var(--Rose-White);
+    padding: 20px;
+    border-radius: 10px;
+}
+.card h2:not(.prepare h2) {
+    font-family: "Young Serif", serif;
+    color: var(--Nutmeg);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.card .prepare h2 {
+    font-size: 20px;
+    color: var(--Dark-Charcoal);
+    margin-bottom: 20px;
+}
+.card .title {
+    font-weight: 700;
+}
+.card .values {
+    margin-top: 20px;
+}
+.card .values div {
+    border-bottom: 1px solid var(--Light-Grey);
+    padding: 15px;
+}
+.card .values .item {
+    display: inline-block;
+    width: 50%;
+    padding-left: 30px;
+}
+.card .values .value {
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
